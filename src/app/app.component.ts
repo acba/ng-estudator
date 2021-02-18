@@ -3,22 +3,19 @@ import {PrimeNGConfig} from 'primeng/api';
 
 @Component({
     selector: 'app-root',
-    templateUrl: './app.component.html',
-    styleUrls: ['./app.component.scss']
+    template: '<router-outlet></router-outlet>'
 })
 export class AppComponent implements OnInit{
 
-    menu = 'slim';
-
-    layout = 'default';
-
-    darkMenu = true;
-
-    inputStyle = 'outlined';
-
+    menu        = 'slim';
+    layout      = 'default';
+    inputStyle  = 'outlined';
+    darkMenu    = true;
     ripple: boolean;
 
-    constructor(private primengConfig: PrimeNGConfig) { }
+    constructor(
+        private primengConfig: PrimeNGConfig
+    ) { }
 
     ngOnInit() {
         this.primengConfig.ripple = true;
