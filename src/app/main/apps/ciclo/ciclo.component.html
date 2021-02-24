@@ -1,0 +1,35 @@
+<div class="p-grid">
+    <div class="p-col-12">
+        <div class="card">
+            <h1>Ciclos</h1>
+        </div>
+    </div>
+
+    <ng-container *ngFor="let superciclo of ciclos | keyvalue">
+        <div class="p-col-12" >
+            <div class="card">
+                <h4>SuperCiclo: {{superciclo.key}}</h4>
+            </div>
+        </div>
+
+        <div class="p-col-6" *ngFor="let ciclo of superciclo.value | keyvalue">
+            <div class="card">
+                <h4>{{ciclo.key}} - {{ciclo.value.cnt}}</h4>
+
+                <ol>
+                    <li *ngFor="let materia of ciclo.value.materias">{{materia}}</li>
+                </ol>
+            </div>
+        </div>
+
+    </ng-container>
+
+    <div class="p-col-12">
+        <div class="card">
+            <h4>Entrada</h4>
+            <textarea class="textarea" pInputTextarea [(ngModel)]="textoCiclos"></textarea>
+
+            <button class="m-2 p-2" pButton type="button" label="Salvar" (click)="processaCiclos()"></button>
+        </div>
+    </div>
+</div>

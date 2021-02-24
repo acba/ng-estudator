@@ -1,0 +1,37 @@
+<div class="p-grid">
+    <div class="p-col-12">
+        <div class="card">
+            <h1>Alocação</h1>
+        </div>
+    </div>
+
+    <div class="p-col-6 p-md-4 p-xl-3" *ngFor="let diasemana of diasSemana">
+
+        <div class="card" *ngIf="existeDiaSemana(diasemana)">
+            <h4>{{utils.getNomeDiaSemana(diasemana)}}</h4>
+            Existe
+
+            <ol>
+                <li *ngFor="let dado of alocacao[diasemana]">{{dado.superciclo}} - {{dado.ciclo}}</li>
+            </ol>
+        </div>
+
+        <div class="card" *ngIf="!existeDiaSemana(diasemana)">
+            <h4>{{utils.getNomeDiaSemana(diasemana)}}</h4>
+
+            <ol>
+                <li *ngFor="let dado of alocacao['-1']">{{dado.superciclo}} - {{dado.ciclo}}</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="p-col-12">
+        <div class="card">
+            <h4>Entrada</h4>
+            <textarea class="textarea" pInputTextarea [(ngModel)]="textoAlocacao"></textarea>
+
+            <button class="m-2 p-2" pButton type="button" label="Salvar" (click)="processaAlocacao()"></button>
+        </div>
+    </div>
+
+</div>

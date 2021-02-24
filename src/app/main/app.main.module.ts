@@ -15,20 +15,29 @@ import {AppFooterComponent} from '../shared/app.footer.component';
 // Application services
 import {MenuService} from '../shared/app.menu.service';
 import { AppConfigComponent } from '../shared/app.config.component';
+import { CicloComponent } from './apps/ciclo/ciclo.component';
+import { DisciplinaComponent } from './apps/disciplina/disciplina.component';
+import { AlocacaoComponent } from './apps/alocacao/alocacao.component';
+import { PlanilhaComponent } from './apps/planilha/planilha.component';
 
 @NgModule({
   declarations: [
+    HomeComponent,
+    CicloComponent,
+    DisciplinaComponent,
+    AlocacaoComponent,
+    PlanilhaComponent,
+
     AppMainComponent,
     AppMenuComponent,
     AppMenuitemComponent,
     AppTopBarComponent,
     AppFooterComponent,
     AppConfigComponent,
-    HomeComponent,
   ],
   imports: [
-    AppMainRoutesModule,
     AppSharedModule,
+    AppMainRoutesModule,
   ],
   providers: [
     MenuService

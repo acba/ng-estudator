@@ -28,11 +28,16 @@
                             "src/favicon.ico"
                         ],
                         "styles": [
+                            "node_modules/primeflex/primeflex.css",
+                            "node_modules/primeicons/primeicons.css",
+                            "node_modules/primeng/resources/primeng.min.css",
+                            "src/assets/theme/theme-blue.css",
+                            "src/assets/layout/css/layout-default.css",
                             "src/styles.scss"
                         ],
                         "scripts": [
                         ],
-                        "allowedCommonJsDependencies": ["@fullcalendar/daygrid","@fullcalendar/timegrid","@fullcalendar/interaction","chart.js"]
+                        "allowedCommonJsDependencies": ["chart.js"]
                     },
                     "configurations": {
                         "production": {
@@ -95,7 +100,6 @@
                         "scripts": [],
                         "assets": [
                             "src/assets",
-                            "src/upload.php",
                             "src/favicon.ico"
                         ]
                     }

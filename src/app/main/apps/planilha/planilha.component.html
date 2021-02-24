@@ -1,0 +1,25 @@
+<div class="p-grid">
+    <div class="p-col-12">
+        <div class="card">
+            <h1>Planilha</h1>
+        </div>
+    </div>
+
+    <div class="p-col-12" *ngIf="!planilha">
+        <div class="card">
+            <h4>Gerar Planilha</h4>
+            <button class="m-2 p-2" pButton type="button" label="Calcular" (click)="processaPlanilha()"></button>
+        </div>
+    </div>
+
+    <div class="p-col-12" *ngIf="planilha">
+        <div class="card">
+            <h4>Planilha</h4>
+            <button class="m-2 p-2" pButton type="button" label="Salvar" (click)="salvaPlanejamento()"></button>
+        </div>
+    </div>
+
+
+
+
+</div>

@@ -6,16 +6,10 @@ import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { LoadingBarHttpClientModule } from '@ngx-loading-bar/http-client';
 import { LoadingBarRouterModule } from '@ngx-loading-bar/router';
 
-import {AccordionModule} from 'primeng/accordion';
-import {AutoCompleteModule} from 'primeng/autocomplete';
-import {AvatarModule} from 'primeng/avatar';
-import {AvatarGroupModule} from 'primeng/avatargroup';
 import {BadgeModule} from 'primeng/badge';
 import {BreadcrumbModule} from 'primeng/breadcrumb';
 import {ButtonModule} from 'primeng/button';
-import {CalendarModule} from 'primeng/calendar';
 import {CardModule} from 'primeng/card';
-import {CarouselModule} from 'primeng/carousel';
 import {CascadeSelectModule} from 'primeng/cascadeselect';
 import {ChartModule} from 'primeng/chart';
 import {CheckboxModule} from 'primeng/checkbox';
@@ -31,7 +25,6 @@ import {DialogModule} from 'primeng/dialog';
 import {DividerModule} from 'primeng/divider';
 import {DropdownModule} from 'primeng/dropdown';
 import {FieldsetModule} from 'primeng/fieldset';
-import {FileUploadModule} from 'primeng/fileupload';
 import {GalleriaModule} from 'primeng/galleria';
 import {InplaceModule} from 'primeng/inplace';
 import {InputNumberModule} from 'primeng/inputnumber';
@@ -81,9 +74,6 @@ import {ToastModule} from 'primeng/toast';
 import {ToggleButtonModule} from 'primeng/togglebutton';
 import {ToolbarModule} from 'primeng/toolbar';
 import {TooltipModule} from 'primeng/tooltip';
-import {TreeModule} from 'primeng/tree';
-import {TreeTableModule} from 'primeng/treetable';
-import {VirtualScrollerModule} from 'primeng/virtualscroller';
 
 import {AppCodeModule} from './app.code.component';
 
@@ -95,16 +85,10 @@ import {AppCodeModule} from './app.code.component';
   imports: [
     CommonModule,
 
-    AvatarGroupModule,
-    AvatarModule,
     BadgeModule,
-    AccordionModule,
-    AutoCompleteModule,
     BreadcrumbModule,
     ButtonModule,
-    CalendarModule,
     CardModule,
-    CarouselModule,
     CascadeSelectModule,
     ChartModule,
     CheckboxModule,
@@ -120,7 +104,6 @@ import {AppCodeModule} from './app.code.component';
     DividerModule,
     DropdownModule,
     FieldsetModule,
-    FileUploadModule,
     GalleriaModule,
     InplaceModule,
     KnobModule,
@@ -170,9 +153,6 @@ import {AppCodeModule} from './app.code.component';
     ToggleButtonModule,
     ToolbarModule,
     TooltipModule,
-    TreeModule,
-    TreeTableModule,
-    VirtualScrollerModule,
     AppCodeModule,
 
     LoadingBarHttpClientModule,
@@ -182,16 +162,10 @@ import {AppCodeModule} from './app.code.component';
     CommonModule,
     FormsModule,
 
-    AvatarGroupModule,
-    AvatarModule,
     BadgeModule,
-    AccordionModule,
-    AutoCompleteModule,
     BreadcrumbModule,
     ButtonModule,
-    CalendarModule,
     CardModule,
-    CarouselModule,
     CascadeSelectModule,
     ChartModule,
     CheckboxModule,
@@ -207,7 +181,6 @@ import {AppCodeModule} from './app.code.component';
     DividerModule,
     DropdownModule,
     FieldsetModule,
-    FileUploadModule,
     GalleriaModule,
     InplaceModule,
     KnobModule,
@@ -257,9 +230,6 @@ import {AppCodeModule} from './app.code.component';
     ToggleButtonModule,
     ToolbarModule,
     TooltipModule,
-    TreeModule,
-    TreeTableModule,
-    VirtualScrollerModule,
     AppCodeModule,
 
     LoadingBarHttpClientModule,

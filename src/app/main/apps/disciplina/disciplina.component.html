@@ -1,0 +1,44 @@
+<div class="p-grid">
+    <div class="p-col-12">
+        <div class="card">
+            <h1>Disciplinas</h1>
+        </div>
+    </div>
+
+    <div class="p-col-6 p-md-4 p-xl-3" *ngFor="let disciplina of disciplinas | keyvalue">
+        <div class="card">
+            <h4>{{disciplina.key}} - {{disciplina.value.cnt}}</h4>
+
+            <div *ngFor="let assunto of disciplina.value.assuntos">
+                {{assunto}}
+            </div>
+        </div>
+    </div>
+
+    <div class="p-col-12">
+        <div class="card">
+            <h4>Entrada</h4>
+            <textarea class="textarea" pInputTextarea [(ngModel)]="textoDisciplinas"></textarea>
+
+            <button class="m-2 p-2" pButton type="button" label="Salvar" (click)="processaDisciplinas()"></button>
+        </div>
+    </div>
+
+    <!-- <div class="p-col-12" *ngIf="disciplinas">
+        <div class="card">
+            <h4>Saida</h4>
+
+            <div>
+                <div *ngFor="let disciplina of disciplinas | keyvalue">
+                    <h1>{{disciplina.key}} - {{disciplina.value.cnt}}</h1>
+
+                    <div *ngFor="let assunto of disciplina.value.assuntos">
+                        {{assunto}}
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div> -->
+
+</div>
